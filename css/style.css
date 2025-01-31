@@ -1,9 +1,62 @@
-/****
-Common
-****/
+/*Common*/
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/*debug*/
+
+.debug .box {
+    height: 300px;
+}
+
+
+/*Header*/
+
+header {
+    background-color: #add8e6;
+    height: 80px;
+}
+
+header .header-container {
+   background-color: #daa520;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+/*section*/
+
+main > section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.bg-blue {
+    background-color: #00008b;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bg-grey {
+    background-color: #d3d3d3;
+}
+
+.box-big {
+    display: flex;
+    padding: 20px 25px;
+    background-color:#1e90ff;
+}
+
+.box-small {
+    display: flex;
+    padding: 20px 25px;
+    background-color: #ffc0cb;
 }
