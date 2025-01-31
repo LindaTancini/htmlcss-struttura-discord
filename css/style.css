@@ -1,62 +1,122 @@
 /*Common*/
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*debug*/
 
-.debug .box {
-    height: 300px;
+.debug main section .box {
+  height: 300px;
+ 
 }
-
 
 /*Header*/
 
 header {
-    background-color: #add8e6;
-    height: 80px;
+  display: flex;
+  background-color: #add8e6;
+  justify-content: center;
 }
 
-header .header-container {
-   background-color: #daa520;
+header .bar-container {
+  display: flex;
+  background-color: #daa520;
+  list-style-type: none;
+  flex-basis: 1000px;
+  margin: 10px;
+  justify-content: space-between;
 }
 
-ul {
+.logo {
+  align-items: center;
+  display: flex;
+  border: 1px solid black;
+  flex-grow: 1;
+  padding-left: 5px;
+  justify-content: start;
+}
+
+.link {
+  display: flex;
+  border: 1px solid black;
+  flex-grow: 2;
+  justify-content: center;
+  padding: 5px;
+}
+
+.login {
+  display: flex;
+  border: 1px solid black;
+  flex-grow: 1;
+  justify-content: end;
+  padding: 5px;
+}
+
+/*container*/
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container-2 {
     display: flex;
-    list-style-type: none;
-    justify-content: space-around;
+    justify-content: center;
+    width: 800px;
+    margin: 0 auto;
 }
 
 /*section*/
 
 main > section {
-    padding-top: 30px;
-    padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
+.box-1 {
+    flex-basis: 700px;
+    height: 300px;
+    background-color: #ee82ee;
+}
+
+.big-box {
+    background-color: #1e90ff;
+    height: 300px;
+    flex-grow: 2;
+}
+
+.small-box {
+    background-color: #ffc0cb;
+    height: 300px;
+    flex-grow: 1;
+}
+
+.first {
+    order: 1;
+}
+
+.second {
+    order: 2;
+}
+
+.box-2 {
+    background-color: #228b22;
+    height: 700px;
+    flex-grow: 1;
+}
+
+
 .bg-blue {
-    background-color: #00008b;
+  background-color: #00008b;
 }
 
 .bg-white {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
-.bg-grey {
-    background-color: #d3d3d3;
-}
-
-.box-big {
-    display: flex;
-    padding: 20px 25px;
-    background-color:#1e90ff;
-}
-
-.box-small {
-    display: flex;
-    padding: 20px 25px;
-    background-color: #ffc0cb;
+.bg-gray {
+  background-color: #d3d3d3;
 }
